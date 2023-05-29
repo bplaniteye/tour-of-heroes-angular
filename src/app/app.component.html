@@ -1,0 +1,10 @@
+<h1>Bienvenue sur {{ title }}</h1>
+<app-heroes-list></app-heroes-list>
+<app-villains-list></app-villains-list>
+
+<ul>
+    <li *ngFor="let hero of heroes">
+        <span class="badge">{{ hero.id }}</span> {{ hero.name }}
+    </li>
+</ul>
+
